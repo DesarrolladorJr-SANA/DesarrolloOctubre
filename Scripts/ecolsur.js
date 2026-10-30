@@ -1,6 +1,6 @@
 ﻿(function () {
     const $ = (s, e = document) => e.querySelector(s), $$ = (s, e = document) => [...e.querySelectorAll(s)];
-    const B = window.ECO_IMG || '/Content/img/', RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
+    const B = window.ECO_IMG || './Content/img/', RM = matchMedia('(prefers-reduced-motion:reduce)').matches;
     // header y menú
     const hd = $('#top'), mn = $('#menu');
     addEventListener('scroll', () => hd.classList.toggle('sc', scrollY > 20), { passive: true });
